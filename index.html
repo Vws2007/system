@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" media="all">
-    <link rel="stylesheet" href="paisagem.css" media="screen and (orientation: landscape)">
-    <link rel="stylesheet" href="retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="media-queries.css">
     <title>Reposiçâo</title>
 </head>
 <body>
@@ -17,13 +17,17 @@
         <img class="log" src="./img/logo.png" alt="logotipo-main" srcset="">
         <div class="login">
             <div class="content">
-                <h1>LOGIN</h1>
-                <h6>Usuario</h6>
-                <input type="text" placeholder="E-mail" name="usuario" id="user">
-                <h6>Senha</h6>
-                <input type="password" placeholder="Senha" name="senha" id="pass">
-                <button class="btn" onclick="login()" >Entrar</button>
-                <a class="esqueci" href="#">esqueci senha</a>
+                <form action="./webpage/index.html" method="post" id="formLogin" autocomplete="off" >
+                    <h1>LOGIN</h1>
+                    <label for="user">Usuario</label>
+                    <input type="text" placeholder="E-mail" name="usuario" id="user" required autofocus minlength="20" maxlength="50">
+                    <i class="material-symbols-outlined" id="iconUser">person</i>
+                    <label for="pass">Senha</label>
+                    <input type="password" placeholder="Senha" name="senha" id="pass" required minlength="8" maxlength="20">
+                    <i class="material-symbols-outlined" id="iconPass">key</i>
+                    <button class="btn" onclick="login()">Entrar</button>
+                    <a class="esqueci" href="https://api.whatsapp.com/send/?phone=5511963724635&text&type=phone_number&app_absent=0&wame_ctl=1" target="_blank">esqueci senha</a>
+                </form>
             </div>
         </div>
     </main>
