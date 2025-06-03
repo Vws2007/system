@@ -6,8 +6,6 @@
 body {
     overflow-x: hidden;
     background-color: black;
-    width: 100%;
-    height: 100vh;
 }
 /* Configuration for the header */
 header {
@@ -16,8 +14,7 @@ header {
     width: 100%;
     height: auto;
     background-color: rgb(51, 51, 51);
-    display: inline-flex;
-    justify-content: end;
+    display: inline-block;
 }
 nav {
     width: 550px;
@@ -38,6 +35,7 @@ nav {
 }
 .logo {
     margin-right: 400px;
+    margin-left: 40px;
 }
 .menu a {
     text-decoration: none;
@@ -51,43 +49,4 @@ nav {
     box-shadow: 0px 2px 5px rgba(6, 102, 255, 0.647);
     border-radius: 5px;
     transition: 1s;
-}
-/* Configuration for the main content */
-.content {
-    margin: 0 215px 0px 80px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 1210px;
-    height: 100%;
-}
-main {
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    width: 640px;
-    height: auto;
-    margin: 40px 120px 10px 0px;
-    color: white;
-}
-main h1 {
-    text-shadow: 0px 0px 4px rgb(255, 255, 255);
-    margin: 10px;
-}
-main p {
-    width: 540px;
-    font-size: 24px;
-    text-shadow: 0px 0px 2px rgb(255, 255, 255);
-    margin: 10px;
-}
-aside {
-    box-shadow: 0px 0px 15px rgb(0, 0, 255);
-    background-image: url(../img/aside.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 20px 60px;
-    padding: 10px;
-    width: 300px;
-    height: 400px;
-    border-radius: 20px;
 }

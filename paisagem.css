@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+body, html {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
 .login {
     position: absolute;
     top: 80px;
@@ -24,4 +29,7 @@
 }
 .btn {
     display: block;
+}
+footer {
+    margin-top: 40px;
 }

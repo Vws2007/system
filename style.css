@@ -7,7 +7,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 82vh;
 }
 header {
     padding: 10px 0px;
@@ -113,12 +113,12 @@ header img {
         margin-left: 20px;
 }
 footer {
-    margin-top: 50px;
     color: white;
     text-align: center;
     font-size: 12px;
     padding: 10px 0px;
     background-color: rgb(22, 22, 22);
+    height: 20px;
 }
 
 .btn {
