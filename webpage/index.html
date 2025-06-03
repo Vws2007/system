@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vws company</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="all">
     <link rel="stylesheet" href="paisagem.css" media="screen and (orientation: landscape)">
     <link rel="stylesheet" href="retrato.css" media="screen and (orientation: portrait)">
@@ -12,22 +13,42 @@
     <header>
         <div class="navbar">
             <h1 class="logo">VWS TECNOLOGY</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="">PRODUTOS</a></li>
-                    <li><a href="">TAREFAS</a></li>
-                    <li><a href="">VIGENCIAS</a></li>
-                    <li><a href="">CONTATO</a></li>
-                    <li><a href="">TESTE</a></li>
-                </ul>
+            <i id="burguer" class="material-icons"  onclick="clickMenu()">menu</i>
+            <nav class="menu">
+                <menu id="itens">
+                    <ul >
+                        <li><a href="">PRODUTOS</a></li>
+                        <li><a href="">TAREFAS</a></li>
+                        <li><a href="">VIGENCIAS</a></li>
+                        <li><a href="">CONTATO</a></li>
+                        <li><a href="">TESTE</a></li>
+                    </ul>
+                </menu>
             </nav>
         </div>
     </header>
-    <div class="content">
-        <main>
+    <main>
+        <div class="content">
             <h1>Seja Bem-Vindo !    </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolore beatae perspiciatis nobis nulla expedita tenetur dolores quidem tempore sunt laboriosam sed hic nam adipisci maiores, fugiat facilis aperiam quaerat.</p>
-        </main>
-    </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dolore beatae perspiciatis nobis nulla expedita tenetur dolores quidem tempore sunt laboriosam sed hic nam adipisci maiores, fugiat facilis aperiam quaerat.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corporis labore nisi at id vel facere nemo expedita, dolore animi repellendus commodi adipisci reiciendis tempore saepe laborum quas quibusdam doloribus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, enim corporis! Adipisci mollitia explicabo ipsum consequatur ipsa, exercitationem illo suscipit provident reprehenderit nostrum nobis, voluptates cumque accusantium cum libero possimus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus vitae, pariatur cum distinctio aperiam consectetur veritatis deleniti autem numquam dolores nostrum commodi odio aspernatur voluptatibus rem. Qui, nihil ex.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt alias, velit molestiae porro, sequi consequatur esse inventore ullam necessitatibus optio hic fuga, veritatis quos! Quo delectus laudantium unde earum corrupti.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

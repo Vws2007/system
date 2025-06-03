@@ -1,52 +1,57 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: serif;
 }
+/* configurações do header */
 body {
-    overflow-x: hidden;
-    background-color: black;
+    font-family: Arial, sans-serif;
+    background-color: #7b7a7acb;
 }
-/* Configuration for the header */
 header {
-    padding: 10px;
-    color: azure;
-    width: 100%;
-    height: auto;
-    background-color: rgb(51, 51, 51);
-    display: inline-block;
+    background-color: rgb(179, 179, 179);
+    padding: 5px;
+    text-align: center;
 }
-nav {
-    width: 550px;
+menu {
+    display: none;
 }
-.navbar {
-    margin-right: 200px;
-    display: inline-flex;
-    align-items: start;
+menu li{
+    display: block;
+    margin: 2px;
+    background-color: rgb(60, 60, 60);
 }
-.menu {
-    display: inline-flex;
-}
-.menu li {
-    margin: 5px 10px;
-    padding: 5px 10px;
+menu a {
     list-style: none;
     text-decoration: none;
-}
-.logo {
-    margin-right: 400px;
-    margin-left: 40px;
-}
-.menu a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-.menu a:hover {
-    background-color: rgb(0, 72, 255);
-    padding: 3px 6px;
     color: white;
-    text-shadow: 0px 0px 2px white;
-    box-shadow: 0px 2px 5px rgba(6, 102, 255, 0.647);
-    border-radius: 5px;
-    transition: 1s;
+}
+menu li:hover {
+    background-color: rgba(136, 136, 136, 0.462);
+}
+main h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+main p {
+    text-align: justify;
+    margin: 10px auto;
+    line-height: 1.5;
+}
+main {
+    width: 90vw;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+/* configurações do burguer */
+#burguer {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    color: white;
+}
+#burguer:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
