@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="paisagem.css" media="screen and (orientation: landscape)">
     <link rel="stylesheet" href="retrato.css" media="screen and (orientation: portrait)">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="navbar">
             <h1 class="logo">VWS TECNOLOGY</h1>
@@ -47,6 +47,13 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>

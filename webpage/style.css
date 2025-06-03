@@ -38,7 +38,7 @@ main p {
     line-height: 1.5;
 }
 main {
-    width: 90vw;
+    width: 85vw;
     margin: 10px auto;
     padding: 20px;
     background-color: #ffffff;
@@ -54,4 +54,30 @@ main {
 #burguer:hover {
     background-color: rgb(255, 255, 255);
     color: black;
+}
+/* media queries */
+@media screen and (min-width: 768px) {
+    #burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu ul li {
+        padding: 5;
+        display: inline-block;
+    }
+    menu ul li a {
+        padding: 10px;
+    }
+    menu li {
+        padding: 5px;
+        border-radius: 7.5px;
+    }
+    header {
+        text-align: left;
+    }
+    main {
+        width: 60vw;
+    }
 }
