@@ -106,21 +106,20 @@ form input:focus::placeholder {
 }
 /* configurando os icons */
 #iconUser {
-    width: 5vw;
-    height: 5vh;
+    width: 5px;
+    height: 5px;
     position: absolute;
-    top: 41%;
-    left: 65%;
+    top: 39%;
+    left: 66%;
     transform: translateY(-50%);
     opacity: 0.5;
 }
 #iconPass{
-    width: 5vw;
-    height: 5vh;
+    width: 5px;
+    height: 5px;
     position: absolute;
-    top: 62.5%;
-    left: 65%;
+    top: 60.5%;
+    left: 67%;
     transform: translateY(-50%);
     opacity: 0.5;
 }
-
