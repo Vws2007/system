@@ -109,8 +109,8 @@ form input:focus::placeholder {
     width: 5px;
     height: 5px;
     position: absolute;
-    top: 38%;
-    left: 66%;
+    top: 185px;
+    left: 225px;
     transform: translateY(-50%);
     opacity: 0.5;
 }
@@ -118,8 +118,8 @@ form input:focus::placeholder {
     width: 5px;
     height: 5px;
     position: absolute;
-    top: 60%;
-    left: 67%;
+    top: 287px;
+    left: 225px;
     transform: translateY(-50%);
     opacity: 0.5;
 }
