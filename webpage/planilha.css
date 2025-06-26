@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* configurações do header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7b7a7acb;
+    overflow: hidden;
+}
+header {
+    background-color: rgb(179, 179, 179);
+    padding: 5px;
+    text-align: center;
+}
+menu {
+    display: none;
+}
+menu li{
+    display: block;
+    margin: 2px;
+    background-color: rgb(60, 60, 60);
+}
+menu a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+main {
+    margin: auto;
+}
+menu li:hover {
+    background-color: rgba(136, 136, 136, 0.462);
+}
+main h1 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+/* configurações do burguer */
+#burguer {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    color: white;
+}
+#burguer:hover {
+    transition: 1.5s;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.content h1 {
+    margin: auto;
+    font-size: 25px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    background-color: aquamarine;
+}
+.box {
+    border: solid 1px black;
+    width: 300px;
+    margin: 10px auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 7.5px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+.box p {
+    opacity: 1.2;
+    margin: 10px 5px;
+    width: 290px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(211, 0, 0);
+}
+a.btn {
+    display: block;
+    width: 200px;
+    background-color: rgb(3, 126, 1);
+    color: white;
+    padding: 5px;
+    border: 1px solid rgb(61, 255, 47);
+    border-radius: 7.5px;
+    text-decoration: none;  
+    margin: 15px 45px;
+    text-align: center;
+}
+a.btn:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 100, 0);
+    box-shadow: 1px 1px 10px rgb(46, 255, 63);
+    border: none;
+    color: white;
+}
+/* media queries */
+@media screen and (min-width: 768px) {
+    #burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu ul li {
+        padding: 5;
+        display: inline-block;
+    }
+    menu ul li a {
+        padding: 10px;
+    }
+    menu li {
+        padding: 5px;
+        border-radius: 7.5px;
+    }
+    header {
+        text-align: left;
+    }
+    main {
+        width: 60vw;
+    }
+}

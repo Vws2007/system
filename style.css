@@ -123,3 +123,12 @@ form input:focus::placeholder {
     transform: translateY(-50%);
     opacity: 0.5;
 }
+@media  and (min-width: 1529px) {
+
+    #iconPass {
+        display: none;} 
+
+    #iconUser {
+        display: none;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="planilha.css" media="all">
+    <title>PLANILHAS</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">VWS TECNOLOGY</h1>
+            <i id="burguer" class="material-icons"  onclick="clickMenu()"> menu </i>
+            <nav class="menu">
+                <menu id="itens">
+                    <ul >
+                        <li><a href="./index.html">PRODUTOS</a></li>
+                        <li><a href="">TAREFAS</a></li>
+                        <li><a href="">VIGENCIAS</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=5511953724635&text&type=phone_number&app_absent=0&wame_ctl=1" target="_blank">SUPORTE</a></li>
+                        <li><a href="planilhas.html">PLANILHAS</a></li>
+                    </ul>
+                </menu>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Planilhas</h1>
+        <div class="content">
+            <div class="box">
+                <h6>Planilha de Data</h6>
+                <h1>Planilha de Datas Lojas</h1>
+                <a class="btn" type="button">Baixar</a>
+            </div>
+            <div class="box">
+                <h6>Planilha de Data</h6>
+                <h1>Planilha de Datas Trufas</h1>
+                <p>A implementação de uma planilha de datas de validade de trufas é fundamental para garantir a qualidade e segurança dos produtos. </p>
+                <a class="btn" href="./arquivos/planilhas-datas-trufas.xlsx">Baixar</a>
+                <a href="./arquivos/planilhas-datas-trufas.pdf" target="_blank" rel="noopener noreferrer">visualisar</a>
+            </div>
+            <div class="box">
+                <h6>Planilha de Data</h6>
+                <h1>Planilha de Datas Lojas</h1>
+                <a href="#" class="btn">Baixar</a>
+            </div>
+        </div>
+    </main>
+    <!-- <iframe width="402" height="356" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/21299e25a39b044b/IQS2z3l0xgt8RrD7pFmrAmbiAVcJnOvcvXYZPThB5N1rP_I?wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>-->
+     <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
