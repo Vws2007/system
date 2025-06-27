@@ -6,7 +6,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #7b7a7acb;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 header {
     background-color: rgb(179, 179, 179);
@@ -27,7 +27,12 @@ menu a {
     color: white;
 }
 main {
-    margin: auto;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    width: 440px;
+    margin: 40px auto;
+    padding: 5px;
 }
 menu li:hover {
     background-color: rgba(136, 136, 136, 0.462);
@@ -49,19 +54,19 @@ main h1 {
     background-color: rgb(255, 255, 255);
     color: black;
 }
-.content h1 {
+#content h1 {
     margin: auto;
     font-size: 25px;
 }
-.content {
-    display: flex;
+#content {
+    display: none;
     flex-direction: column;
-    margin: auto;
+    margin: 25px auto;
     width: 400px;
     border-radius: 10px;
     padding: 10px;
     height: auto;
-    background-color: aquamarine;
+    background-color: rgb(92, 92, 92);
 }
 .box {
     border: solid 1px black;
@@ -104,6 +109,24 @@ a.btn:hover {
     box-shadow: 1px 1px 10px rgb(46, 255, 63);
     border: none;
     color: white;
+}
+#hidden {
+    display: none;
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btnn {
+    margin: 10px 5px 10px 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(4, 255, 0);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    color: rgb(84, 84, 84);
 }
 /* media queries */
 @media screen and (min-width: 768px) {

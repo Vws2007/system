@@ -25,9 +25,11 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main id="main">
         <h1>Planilhas</h1>
-        <div class="content">
+        <p>As planilhas são ferramentas essenciais para a organização e controle de informações em diversos contextos, como empresas, escolas e projetos pessoais. Elas permitem o registro, análise e visualização de dados de forma estruturada, facilitando a tomada de decisões e o planejamento.</p>
+        <p>As planilhas podem ser utilizadas para uma variedade de finalidades, como controle financeiro, planejamento de projetos, gestão de inventário, análise de vendas, entre outros. Elas oferecem recursos como fórmulas, gráficos e tabelas dinâmicas, que ajudam a transformar dados brutos em informações úteis e compreensíveis.</p>
+        <div id="content">
             <div class="box">
                 <h6>Planilha de Data</h6>
                 <h1>Planilha de Datas Lojas</h1>
@@ -46,8 +48,13 @@
                 <a href="#" class="btn">Baixar</a>
             </div>
         </div>
+        <div class="botoes">
+            <button class="btnn" type="button" id="exibe" onclick="exibir()">EXIBIR PLANILHAS</button>
+            <button class="btnn" type="button" id="hidden" onclick="ocultar()">OCULTAR</button>
+        </div>
     </main>
     <!-- <iframe width="402" height="356" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/21299e25a39b044b/IQS2z3l0xgt8RrD7pFmrAmbiAVcJnOvcvXYZPThB5N1rP_I?wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>-->
+     <script src="index.js"></script>
      <script>
         function clickMenu() {
             if (itens.style.display == 'block') {
